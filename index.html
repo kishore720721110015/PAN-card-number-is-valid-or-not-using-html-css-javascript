@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <div class="sec">
+            <form>
+            <label>PAN Card :</label>
+            <input type="text" id="pan"><span id="spa"></span><br>
+            <button id="btn" onclick=validatePAN()>Submit</button>
+        </form>
+        </div>
+</body>
+    <script>
+        function validatePAN() {
+            const val = document.getElementById('pan').value;
+            const regpan = /^([A-Z]){5}([0-9]){4}([A-Z]){1}$/;
+
+            if (regpan.test(val)) {
+                // document.getElementById('spa').innerHTML='Valid PAN';
+                alert("Valid PAN")
+
+            } else{
+                // document.getElementById('spa').innerHTML='Invalid PAN';
+                alert("Invalid PAN")
+
+            }
+        }
+        
+    </script>
+</html>

@@ -1,0 +1,27 @@
+.sec{
+    max-width: 650px;
+    margin: 150px auto;
+    border: 1px solid black;
+    padding: 50px;
+    background-color: #BB9AB1;
+    border-radius: 10px;
+    border-color:rgb(149, 102, 20) ;
+}
+button{
+    border-radius:10px;
+    background-color: rgb(84, 200, 84);
+    color: white;
+    margin-top: 10px;   
+    margin-left: 120px;
+}
+button:hover{
+    background-color: green;
+}
+input{
+    height: 20px;
+    border-top: none;
+    border-radius: 5px;
+}
+form{
+    padding-left: 160px;
+}
